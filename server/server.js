@@ -14,4 +14,6 @@ require("./config/mongoose.config");
 
 require("./routes/user.routes")(app);
 
+require("./routes/message.routes")(app);
+
 app.listen(process.env.MY_PORT, () => console.log(`Connected to port ${process.env.MY_PORT}`));
