@@ -40,7 +40,7 @@ const MessageSchema = new mongoose.Schema ({
         type: String,
     },
 
-    createBy: {
+    createdBy: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "User"
     }

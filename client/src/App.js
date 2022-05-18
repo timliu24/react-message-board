@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import NewMessage from './components/NewMessage';
+import AllMessages from './components/AllMessages';
+import OneMessage from './components/OneMessage';
+import {Router} from '@reach/router'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <AllMessages path="/" />
+        <NewMessage path="/new" />
+        <OneMessage path="/message/:id" />
+      </Router>
+
     </div>
   );
 }
