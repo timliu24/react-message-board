@@ -2,6 +2,7 @@ import './App.css';
 import NewMessage from './components/NewMessage';
 import AllMessages from './components/AllMessages';
 import OneMessage from './components/OneMessage';
+import EditMessage from './components/EditMessage';
 import {Router} from '@reach/router'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <AllMessages path="/" />
         <NewMessage path="/new" />
         <OneMessage path="/message/:id" />
+        <EditMessage path="/message/edit/:id" />
       </Router>
 
     </div>
